@@ -1,0 +1,59 @@
+.vscode
+.ipynb
+
+env
+.env
+venv
+__pycache__
+*.swp
+*.iml
+*.ipynb
+*.ipynb*
+
+# Editor directories and files
+.idea
+.idea/
+.idea/*
+.vscode
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw*
+*.node_modules
+*build/*
+*dist/*
+*.egg-info/*
+*.egg-info/
+*dist/
+
+# OS generated files #
+######################
+.DS_Store
+ehthumbs.db
+Icon?
+target/
+
+# Eclipse Core
+.project
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+.settings
+.factorypath
+
+# secrets
+secret-values.yaml
+
+# coverage reports
+.coverage
+
+# pytest
+.pytest_cache
+
+.benchmarks
+
+.idea/
+
+# data
+*.csv
