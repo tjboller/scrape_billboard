@@ -4,21 +4,11 @@ base_url: "https://www.billboard.com/charts"
 max_retries: 2
 
 chart_names:
-#  - "hot-100"
-#  - "billboard-200"
+  - "hot-100"
+  - "billboard-200"
   - "artist-100"
 
-table_style:
-  title: "data-title"
-  artist: "data-artist"
-  rank: "data-rank"
-  date_selector: "button.chart-detail-header__date-selector-button"
-  entry: "div.chart-list-item"
-
-list_element_style:
-  title: "span.chart-element__information__song"
-  artist: "span.chart-element__information__artist"
-  rank: "span.chart-element__rank__number"
-  date_selector: "button.date-selector__button.button--link"
-  entry: "li.chart-list__element"
+title_tag: "c-title a-no-trucate a-font-primary-bold-s"
+artist_tag: "c-label a-no-trucate a-font-primary-s"
+date_tag: "a-chart-datepicker-container"
 

@@ -59,7 +59,6 @@ def _top_query(query, chart, max_date=None, min_date=None, top_n=None):
     return db.DbConnection().read_to_pandas(query).to_dict('records')
 
 
-# TODO: Mitigate SQL injection vulnerability
 def _build_where_clause(
         artist=None, title=None, max_date=None,
         min_date=None, max_rank=None, min_rank=None, chart=None):
