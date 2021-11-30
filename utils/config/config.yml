@@ -11,4 +11,4 @@ chart_names:
 title_tag: "c-title a-no-trucate a-font-primary-bold-s"
 artist_tag: "c-label a-no-trucate a-font-primary-s"
 date_tag: "a-chart-datepicker-container"
-
+rank_tag: "c-label a-font-primary-bold-l u-font-size-32@tablet u-letter-spacing-0080@tablet"

@@ -2,7 +2,7 @@ import os
 import pytest
 import pandas as pd
 
-from scraper import scraper
+from scraper import main
 
 
 CURR_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -24,7 +24,7 @@ TEST_DATA = [read_test_data(file) for file in CHARTS]
 
 @pytest.mark.parametrize('html,chart', zip(TEST_DATA, CHARTS), ids=CHARTS)
 def test_parsing(html, chart):
-    chart_df = scraper._parse_soup(html, chart)
+    chart_df = main._parse_soup(html, chart)
     assert len(chart_df) > 0
     assert isinstance(chart_df, pd.DataFrame)
     assert set(chart_df.columns) == {'artist', 'title', 'chart', 'week', 'rank'}

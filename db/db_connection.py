@@ -17,6 +17,16 @@ class DbConnection:
             os.path.join(CURR_DIR, __config__['db_name'])
         )
 
+    def write(self, query, parameters=None):
+        cur = self.connection.cursor()
+        try:
+            parameters = parameters if parameters else {}
+            cur.execute(query, parameters)
+            self.connection.commit()
+            LOGGER.info('Changes committed to db')
+        finally:
+            cur.close()
+
     def read(self, query, parameters=None):
         cur = self.connection.cursor()
         try:
@@ -36,3 +46,4 @@ class DbConnection:
             index=False,
             if_exists=if_exists,
             **kwargs)
+        LOGGER.info('Data dumped to DB')
